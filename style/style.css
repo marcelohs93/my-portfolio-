@@ -1,49 +1,52 @@
-/* Resets da Pagina */
+/* Reset */
 html, body{
 	height: 100%;
 }
 
 body{
-	font-family: 'Amatic SC', cursive;
 	margin:0;
 	padding: 0;
-	/*background-color: #b1b2b4;*/
+	font-family: 'Amatic SC', cursive;
 }
 
-/* Estilos para o header e parte principal */
-
-header{
-	background-color: #000;
+/* Styles for header and main part */
+header{ 	
 	height: 50px;
-	padding-right: 20px;
 	padding-top: 15px;
 	text-align: right;
+	padding-right: 20px;
+	background-color: #000;
 	box-sizing: border-box;
 }
 
 header nav a{
 	color: #fff;
-	text-decoration: none;
 	margin: 0 5px;
-	font-weight: 700;
 	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 header nav a:hover {
-	border-bottom: 2px solid red;
 	border-top: 2px solid red;
+	border-bottom: 2px solid red;
 }
 
-.principal{
-	background-image: url('../image/back.jpg');
-	background-size: cover;
+.main{
 	height: 604px;
+	background-size: cover;
 	box-sizing: content-box;
+	background-image: url('../image/back.jpg');
 }
 
-.principal .quote{
-	padding-top: 80px;
+.main ul{
+	margin: 0;
+	list-style: none;
+}
+
+.main .quote{
 	color: #fff;
+	padding-top: 80px;
 	text-align: center;
 }
 
@@ -57,29 +60,24 @@ header nav a:hover {
 	font-size: 50px;
 }
 
-.principal ul{
-	margin: 0;
-	list-style: none;
-}
-
 #button{
-	text-align: center;
 	margin-top: 100px;
+	text-align: center;
 }
 
 #button a{
-	text-decoration: none;
 	color:#fff;
+	text-decoration: none;
 }
 
 
 .get-in-touch{
-	background-color: red;
+	color:#fff;
 	font-size: 30px;
 	padding: 2px 45px;
 	text-align: center;
+	background-color: red;
 	border:1px solid #ffffff80;
-	color:#fff;
 }
 
 .get-in-touch:hover{
@@ -87,46 +85,46 @@ header nav a:hover {
 }
 
 
-/* Estilos para a seção about */
+/* Style for the about section */
 #about{
-	background-image: linear-gradient(#aeb2b3,#fff);
 	padding:40px;
+	background-image: linear-gradient(#aeb2b3,#fff);
 }
 
-#about .foto{
+#about .photo{
 	width: 200px;
 	height: 200px;
-	border-radius: 50%;
-	border: 1px solid #aeb2b3;
-	box-shadow: 10px 5px 30px rgb(100,100,100);
-	text-align: center;
 	display: block;
+	border-radius: 50%;
+	text-align: center;
+	border: 1px solid #aeb2b3;
 	margin: -40px auto 0 auto;
 	transition: transform .2s; /* Animation */
+	box-shadow: 10px 5px 30px rgb(100,100,100);
 }
 
-#about .foto:hover{
+#about .photo:hover{
     transform: scale(1.2);
 }
 
 
 #about .name-description{
+	margin:0;
 	font-size: 45px;
 	border-bottom:2px dotted black;
-	margin:0;
 }
 
 #about .about-description{
-	border-left: 5px solid #6f6a6a;
-	font-size: 25px;
 	width: 500px;
-	margin: -140px 0 0 auto;
+	font-size: 25px;
 	padding-left: 15px;
 	border-radius: 24px;
+	margin: -140px 0 0 auto;
+	border-left: 5px solid #6f6a6a;
 }
 
 
-/*Estilos para os skills*/
+/*Styles for the skills*/
 
 .skills{
 	margin-top: 40px;	
@@ -142,16 +140,16 @@ header nav a:hover {
 }
 
 .skills .skills-item{
-	text-align: center;
 	margin: 0 10px;
+	text-align: center;
 	border: 1px dotted #bdbbbb;;
 }
 
 .skills .skills-item h4{
+	color: red;
+	margin:10px;
 	font-size: 30px;
 	font-weight: 700;
-	margin:10px;
-	color: red;
 }
 
 .skills .skills-item p{
@@ -170,51 +168,47 @@ header nav a:hover {
 	flex:1;
 }
 
-/*Estilos para os Projetos*/
-#projects{
-	
-	background-image: linear-gradient(#fff,#ccc);
+/*Style for the projects*/
+#projects{	
 	padding: 40px;
+	background-image: linear-gradient(#fff,#ccc);
 }
 
 #projects h4{
-	font-size: 45px;
 	margin: 0;
-	border-left: 3px solid red;
+	font-size: 45px;
 	padding-left: 5px;
+	border-left: 3px solid red;
 }
 
 #projects .project-row{
 	display: flex;	
 	flex-wrap: wrap;
 	margin-top: 20px;
-	justify-content: space-around;
-
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-left: 1px solid #f003;
 	padding-left: 10px;
-
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-right: 1px solid #f003;
 	padding-right: 10px;
+	border-top-left-radius: 10px;
+	border-left: 1px solid #f003;
+	justify-content: space-around;
+	border-top-right-radius: 10px;
+	border-right: 1px solid #f003;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 #projects .project-row projects-image{
 	flex:1;
 }
+
 #projects .project-row .projects-description{
-/*	flex: -moz-min-content;*/
 flex:3;
 }
-
 
 #projects .project-row figure img{
 	width: 340px;
 	height: 170px;
-	box-shadow: 5px 5px 10px rgb(120,120,120);
 	transition: transform .2s; /* Animation */
+	box-shadow: 5px 5px 10px rgb(120,120,120);
 }
 
 #projects .project-row figure img:hover{
@@ -233,64 +227,62 @@ flex:3;
 }
 
 #projects .project-row .projects-description h5{
-	font-size: 35px;
 	margin: 0;
 	color: red;
+	font-size: 35px;
 }
 
 #projects .project-row .projects-description p{
 	font-size: 25px;
 }
 
-
-/*Estilos para os Contanct*/
+/*Style for the Contact*/
 #contact{
-	background-image: linear-gradient(#ccc,#fff);
 	padding: 40px 40px 0;
+	background-image: linear-gradient(#ccc,#fff);
 }
 
 #contact h4	{
-	font-size: 45px;
 	margin: 0;
-	border-left: 3px solid red;
+	font-size: 45px;
 	padding-left: 5px;
+	border-left: 3px solid red;
 }
 
 #contact .contact-row{
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 40px 40px;
 	font-size: 35px;
+	margin: 0 40px 40px;
 }
 #contact .contact-row .message{
 	flex:1;
 	font-size: 30px;
 }
 	
-#contact .icones-sociais ul{
-	list-style: none;
+#contact .social-icons ul{
 	display: flex;
+	list-style: none;
 	text-align: center;
 }
 #contact nav{
 	text-align: center;
 }
 
-#contact .icones-sociais img{
+#contact .social-icons img{
 	width: 30px;
 	height: 30px;
 	margin: 0 2.5px;
 }
 
-
 #contact .contact-row form{
 	flex:1;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 	padding-top: 40px;
-	border-right: 1px solid #a8a3a3;
+	align-items: center;
 	border-radius: 200px;
+	flex-direction: column;
+	border-right: 1px solid #a8a3a3;
 }
 #contact .contact-row form span{
 	color: red;
@@ -305,13 +297,12 @@ flex:3;
 }
 
 #contact .form-input{
-	background-color: transparent;
 	border:none;
-	border-bottom: 2px #ab9d9d dotted;	
+	width: 300px;	
 	padding-top: 0;
 	margin-top: 40px;
-	width: 300px;	
-	/*! font-size: 5px; */
+	border-bottom: 2px #ab9d9d dotted;	
+	background-color: transparent;
 }
 
 #text-message{
@@ -320,18 +311,17 @@ flex:3;
 }
 
 #text-message:focus{
-	border-top: 2px #000 dotted;	
 	background-color: #fff;
+	border-top: 2px #000 dotted;	
 }
-
 
 #contact .form-input[type="text"],[type="email"]{
 	font-size: 20px;
 }
 
 #contact form input[type="submit"]{
-	font-family: 'Amatic SC', cursive;
 	align-self: center;
+	font-family: 'Amatic SC', cursive;
 }
 
 #contact .form-input:focus{
@@ -339,25 +329,25 @@ flex:3;
 }
 
 #contact .form-button{
-	background-color: red;
+	color:#fff;
 	font-size: 30px;
+	margin-top: 40px;
 	padding: 2px 45px;
 	text-align: center;
+	background-color: red;
 	border:1px solid #ffffff80;
-	color:#fff;
-	margin-top: 40px;
 }
 
 #contact .form-button:hover{
 	background-color: black;
 }
 
-/*Footer*/
+/*Style for the Footer */
 footer{
-	background-color: #000;
 	height: 50px;
-	padding-right: 20px;
 	text-align: right;
+	padding-right: 20px;
+	background-color: #000;
 	box-sizing: border-box;
 }
 footer p{
@@ -368,15 +358,13 @@ footer p{
 
 footer nav a{
 	color: #fff;
-	text-decoration: none;
 	margin: 0 5px;
-	font-weight: 700;
 	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 footer nav a:hover {
 	border-bottom: 2px solid red;
 	border-top: 2px solid red;
 }
-
-
