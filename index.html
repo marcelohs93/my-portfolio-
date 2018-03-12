@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Dev Souza</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Marcelo Henrique de Souza">
+	<meta name="description" content="Portifolio page for Front End Developer course in Freecodecamp.com">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet"> 
+</head>
+<body>
+	<div class="container">
+	<!-- topo -->		
+		<header  id="home">			
+		<!--<a href="/"><img class="logo" src="image/logo.jpg"></a> -->
+			<nav>
+				<a href="#home">home</a>	
+				<a href="#about">about</a>
+				<a href="#projects">project</a>			
+				<a href="#contact">contact</a>			
+			</nav>
+		</header>
+
+	<!-- Introdução - Frase e foto background -->
+	<section class="principal">	
+		<div class="quote">
+			<h1>"The best way to predict the future is to create it"</h1>
+			<p>Peter Drucker</p>
+		</div>
+
+		<div id="button">
+			<a href="#contact" class="get-in-touch"><strong>Get in touch</strong></a>
+		</div>
+
+	</section>
+
+<!-- About -->
+	<section id="about">		
+		<h4 class="name-description">Marcelo Henrique de Souza (DevSouza)</h4>
+		<img class="foto" src="image/foto.jpg" alt="foto Marcelo Henrique">
+		<p class="about-description">Formado em Analise e desenvolvimento de sistemas no Brasil, hoje vivendo na Austrlia. Apaixonado por tecnologia e pela comunidade open source e tem como principal hobbie o estudo de Segurança da Informação. Conheça mais sobre mim no meu Instagram</p>
+		
+		
+		<!-- Skills -->
+		<div class="skills">
+			<div class="skills-item code">
+				<img src="image/code.png"> 
+				<h4><strong>Web Developer</h4></strong>
+				<p>As an experienced developer, i've worked in an interational Bank with many techologies.</p>
+			</div>
+			<div class="skills-item project">
+				<img src="image/project.png">
+				<h4><strong>Project Manager</strong></h4>
+				<p>I'm studying Diploma in Project Manager in Sydney, Australia. I know the main concept about that and i have aply it in all my projects.</p>
+			</div>
+			<div class="skills-item security">
+				<img src="image/security.png">	
+				<h4><strong>Security</strong></h4>
+				<p>it's my hobbie, i'm relly love security of information and I've done a lot of course about that. I follow the Top 10 vulnerabilities' OWASP</p>
+			</div>
+		</div>
+	</section>
+
+<!-- Projects -->
+	<section id="projects">
+		<h4>My Projects</h4>		
+		<div class="project-row">			
+			<figure class="projects-row-item projects-image">				
+				<a href="https://codepen.io/devsouza/full/NyZYGp/" target='_blank'><img src="image/tributepage.jpg"></a>
+				<figcaption>veja o projeto completo <a href="https://codepen.io/devsouza/full/NyZYGp/" target='_blank'>aqui</a>.</figcaption>
+			</figure>
+			<div class="projects-row-item projects-description">
+				<h5>Tribute Page - Nelson Mandela</h5>
+				<p><strong>Nelson Rolihlahla Mandela</strong> (<time datetime="18-07-1918"> 18 July 1918 </time> – <time datetime="05-12-2013">5 December 2013</time>) was a South African anti-apartheid revolutionary, political leader, and philanthropist, who served as President of South Africa from <time datetime="1994">1994</time> to <time datetime="1999">1999</time>. He was the country's first black head of state and the first elected in a fully representative democratic election.</p>
+			</div>
+		</div>
+
+		<div class="project-row">			
+			<figure class="projects-row-item projects-image">				
+				<a href="https://codepen.io/devsouza/full/NyZYGp/" target='_blank'><img src="image/tributepage.jpg"></a>
+				<figcaption>veja o projeto completo <a href="https://codepen.io/devsouza/full/NyZYGp/" target='_blank'>aqui</a>.</figcaption>
+			</figure>
+			<div class="projects-row-item projects-description">
+				<h5>Reserved - for your project</h5>
+				<p><strong>Nelson Rolihlahla Mandela</strong> (<time datetime="18-07-1918"> 18 July 1918 </time> – <time datetime="05-12-2013">5 December 2013</time>) was a South African anti-apartheid revolutionary, political leader, and philanthropist, who served as President of South Africa from <time datetime="1994">1994</time> to <time datetime="1999">1999</time>. He was the country's first black head of state and the first elected in a fully representative democratic election.</p>
+			</div>
+		</div>
+	</section>
+
+<!-- Contact -->
+	<section id="contact">
+		
+		<h4>Get in touch</h4>
+			<div class="contact-row">
+				<div class="message">
+					<p>Eu vou ficar muito feliz em falar com você e poder te ajudar. Entre em conatato por alguma rede social ou preencha o formulario ao lado que em breve eu entro em conatato com você!</p>
+					<p>Best Regards</p>
+					<p><strong>Marcelo Henrique</strong></p>
+
+						<nav class="icones-sociais">
+							<ul>
+								<li><a class="medium" href=""><img src="image/media.png"></a></li>	
+								<li><a class="linkedin" href=""><img src="image/linkedin.png"></a></li>
+								<li><a class="codepen" href=""><img src="image/codepen.png"></a>	</li>
+								<li><a class="github" href=""><img src="image/github.png"></a></li>
+							</ul>
+						</nav>
+				</div>
+				<form method="post">
+					<h5><strong>take the first step <span>;)</span></strong></h5>
+					<label>Name:
+						<input class="form-input" type="text" name="name" required="">					
+					</label>
+					<label>email:
+						<input class="form-input" type="email" name="email" required="">
+					</label>
+					<label>Telefone:
+						<input class="form-input" type="text" name="Telefone">
+					</label>
+					<label>Message:
+						<input id="text-message" class="form-input" type="text" name="message" required="">
+					</label>		
+						<input class="form-button" type="submit" name="send" value="Send">			
+				</form>
+			</div>
+	</section>
+<!--footer-->
+	<footer>
+		<p>Site desenvolvido por Marcelo</p>
+			<nav>
+				<a href="#home">home</a>	
+				<a href="#about">about</a>
+				<a href="#projects">project</a>			
+				<a href="#contact">contact</a>			
+			</nav>
+	</footer>
+</div>
+</body>
+</html>
